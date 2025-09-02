@@ -1,18 +1,51 @@
 @import "tailwindcss";
 
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
 
 @theme {
   --color-base: #2563eb;
 }
+
+.animate-border {
+  --border-angle: 0deg;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
 @layer components {
   .nav-link {
     @apply inline-block hover:text-sky-600 hover:text-shadow-[0_0_12px_#70daff]  transform hover:scale-110 transition duration-300 ease-in-out lg:text-lg;
   }
-  .card-blu{
-    @apply  p-6 sm:px-20 sm:my-6 rounded-3xl hover:shadow-[0_0_12px_var(--color-base)] hover:inset-shadow-[0_0_5px_var(--color-base)] hover:bg-gray-800 transition duration-200 ease-linear
+  .card-blu {
+    @apply p-[2px] rounded-3xl
+    transition duration-200 ease-linear hover:scale-[1.01];
+    --border-angle: 0deg;
+    animation: rotate 3s linear infinite;
   }
-  .pills{
-    @apply transform bg-gray-800 rounded-full px-6 py-3 border border-transparent hover:border-base hover:shadow-[0_0_12px_var(--color-base)] hover:scale-110 transition duration-200 ease-linear 
+
+  .card-blu:hover {
+    background-image: conic-gradient(
+      from var(--border-angle),
+      var(--color-gray-900) 40%,
+      var(--color-sky-400) 50%,
+      var(--color-gray-900) 70%
+    );
+  }
+
+  .card-inner {
+    @apply bg-radial from-gray-900 from-50% to-90% to-gray-950  p-10 rounded-3xl h-full border border-gray-800;
+  }
+
+  .pills {
+    @apply transform bg-gray-800 rounded-full px-6 py-3 border border-transparent  hover:shadow-[0_2px_0_var(--color-base)] hover:scale-110 hover:-translate-y-1 transition duration-200 ease-linear cursor-default;
   }
 }
-

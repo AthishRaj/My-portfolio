@@ -10,7 +10,7 @@ import Skills from './component/Skills';
 export default function App() {
   return (
     <>
-      <div className='bg-linear-to-l from-gray-900 from-50% to-gray-950 text-white'>
+      <div className='bg-linear-to-r from-gray-900 to-gray-950 text-white'>
         <Nav />
         <Welcome />
         <About />
