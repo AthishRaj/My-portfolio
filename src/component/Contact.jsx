@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <>
       <section id="contact">
-        <div className="  w-full flex flex-col gap-6 mt-6 items-center">
+        <div className="mt-20 w-full flex flex-col gap-6 items-center">
           <div className="justify-items-center">
             <h1 className="text-2xl font-bold">CONTACT ME</h1>
             <p className="my-6 mx-6 text-center">I'd love to hear from you — whether it's about a project, a job, or just to say hi.</p>

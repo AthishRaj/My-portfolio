@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <>
       <section id="experience">
-        <div className=" w-full flex flex-col items-center gap-4 my-6">
+        <div className="mt-20 w-full flex flex-col items-center gap-4 my-6">
           <div>
             <h1 className="text-3xl font-bold">EXPERIENCE</h1>
           </div>

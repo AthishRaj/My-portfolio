@@ -38,7 +38,7 @@ const toolSkills = [
 export default function Skills() {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="mt-20 flex flex-col">
         <h1 className="self-center text-3xl font-bold">MY SKILLS</h1>
 
         <div className="w-full flex flex-col md:flex-row gap-6 justify-evenly px-6 my-6">
