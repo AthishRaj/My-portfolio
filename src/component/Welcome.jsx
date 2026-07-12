@@ -24,7 +24,7 @@ export default function Welcome() {
         onMouseLeave={mouseLeaveHandle}
         onMouseEnter={mouseEnterHandle}
         onMouseMove={mouseMoveHandle}
-        className="h-[95dvh] flex flex-col gap-4 sm:gap-8 justify-center items-center hover:[transform:rotatex(var(--x-rotate))_rotatey(var(--y-rotate))] transition duration-200 ease-linear">
+        className="h-[95dvh] w-dvw flex flex-col gap-4 sm:gap-8 justify-center items-center hover:[transform:rotatex(var(--x-rotate))_rotatey(var(--y-rotate))] transition duration-200 ease-linear ">
           <h1 className="text-2xl sm:text-4xl">I am </h1>
           <div className="">
             <h1 className="">

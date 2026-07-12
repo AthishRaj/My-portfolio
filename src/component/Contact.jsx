@@ -13,20 +13,20 @@ export default function Contact() {
           </div>
           <div className="flex flex-col gap-3">
             <a href="tel:9074652931"
-              className="flex gap-3 justify-center items-center hover:text-base hover:text-shadow-[0_0_12px_#2563eb] transition duration-200 ease-linear">
+              className="flex gap-3 justify-center items-center footer-link">
               <FaPhoneAlt />+91 9074652931</a>
             <a href="mailto:athishraj88@gmail.com"
-              className="flex gap-3 justify-center items-center hover:text-base hover:text-shadow-[0_0_12px_#2563eb] transition duration-200 ease-linear">
+              className="flex gap-3 justify-center items-center footer-link">
               <SiGmail />athishraj88@gmail.com</a>
             <div className="flex gap-6 my-3 justify-evenly ">
               <a href="https://github.com/AthishRaj">
-                <FaGithub className="transform scale-200 hover:text-base hover:drop-shadow-[0_0_12px_#2563eb] transition duration-200 ease-linear" /></a>
+                <FaGithub className="transform scale-200 footer-link" /></a>
               <a href="https://www.linkedin.com/in/athish-raj">
-                <FaLinkedin className="scale-200 hover:text-base hover:drop-shadow-[0_0_12px_#2563eb] transition duration-200 ease-linear" /></a>
+                <FaLinkedin className="scale-200 footer-link" /></a>
             </div>
           </div>
           <div>
-            <p className="my-20 text-sm text-gray-400">
+            <p className="mt-20 mb-5 text-sm text-gray-400">
               &copy;{new Date().getFullYear()}<span className="text-white">Athish Raj U K</span>. All rights reserved
             </p>
           </div>

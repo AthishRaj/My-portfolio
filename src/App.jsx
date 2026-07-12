@@ -5,7 +5,8 @@ import About from "./component/About";
 import Education from './component/Education';
 import Project from './component/Project';
 import Contact from './component/Contact';
-import Skills from './component/Skills';
+import Skills from './component/Skills2';
+import Experience from './component/Experience';
 
 export default function App() {
   return (
@@ -14,9 +15,10 @@ export default function App() {
         <Nav />
         <Welcome />
         <About />
-        <Education />
-        <Skills/>
+        <Experience />
         <Project />
+        <Skills />
+        <Education />
         <Contact/>
       </div>
     </>
