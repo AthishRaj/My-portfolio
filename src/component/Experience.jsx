@@ -4,7 +4,7 @@ import { PiCertificateFill } from "react-icons/pi";
 export default function Experience() {
   return (
     <>
-      <section id="project">
+      <section id="experience">
         <div className=" w-full flex flex-col items-center gap-4 my-6">
           <div>
             <h1 className="text-3xl font-bold">EXPERIENCE</h1>
