@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="  w-full flex flex-col gap-6 mt-6 items-center">
           <div className="justify-items-center">
             <h1 className="text-2xl font-bold">CONTACT ME</h1>
-            <p className="my-6">I'd love to hear from you — whether it's about a project, a job, or just to say hi.</p>
+            <p className="my-6 mx-6 text-center">I'd love to hear from you — whether it's about a project, a job, or just to say hi.</p>
           </div>
           <div className="flex flex-col gap-3">
             <a href="tel:9074652931"
@@ -25,7 +25,7 @@ export default function Contact() {
                 <FaLinkedin className="scale-200 footer-link" /></a>
             </div>
           </div>
-          <div>
+          <div >
             <p className="mt-20 mb-5 text-sm text-gray-400">
               &copy;{new Date().getFullYear()}<span className="text-white">Athish Raj U K</span>. All rights reserved
             </p>

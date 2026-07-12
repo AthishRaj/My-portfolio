@@ -20,7 +20,7 @@
 
 @layer components {
   .nav-link {
-    @apply flex px-5 items-center h-full hover:bg-sky-600 transition duration-300 ease-in-out lg:text-lg;
+    @apply flex px-2 sm:px-3 lg:px-5 items-center h-full hover:bg-sky-600 transition duration-300 ease-in-out lg:text-lg;
   }
 
   .footer-link {
