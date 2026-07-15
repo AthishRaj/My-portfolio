@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 export default function About() {
   return (
     <>
-      <section id="about" className="h-dvh">
+      <section id="about" className="min-h-dvh">
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
