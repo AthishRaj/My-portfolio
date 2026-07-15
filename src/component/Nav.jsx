@@ -48,7 +48,7 @@ export default function Nav() {
             ))}
             <motion.li
               animate={position}
-              className="z-0 absolute h-7 md:h-11 rounded-full left-0 bg-sky-400 w-20"
+              className="z-0 absolute h-7 md:h-11 rounded-full left-0 bg-sky-500 w-20"
             />
           </ul>
           {/* Mobile Button */}

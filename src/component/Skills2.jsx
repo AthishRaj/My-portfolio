@@ -4,35 +4,35 @@ import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 import { TbBrandFigma, TbBrandJavascript, TbBrandNextjs, TbFileTypePhp } from "react-icons/tb";
 
 const frontendSkills = [
-  { name: "HTML", icon: <FaHtml5 />, level: 85 },
-  { name: "CSS", icon: <FaCss3Alt />, level: 85 },
-  { name: "React", icon: <FaReact />, level: 70 },
-  { name: "Next.js", icon: <TbBrandNextjs />, level: 65 },
-  { name: "Bootstrap", icon: <FaBootstrap />, level: 70 },
-  { name: "Tailwind CSS", icon: <RiTailwindCssFill />, level: 70 },
+  { name: "HTML", icon: <FaHtml5 />, level: 75 },
+  { name: "CSS", icon: <FaCss3Alt />, level: 75 },
+  { name: "React", icon: <FaReact />, level: 60 },
+  { name: "Next.js", icon: <TbBrandNextjs />, level: 55 },
+  { name: "Bootstrap", icon: <FaBootstrap />, level: 60 },
+  { name: "Tailwind CSS", icon: <RiTailwindCssFill />, level: 60 },
 ];
 
 const backendSkills = [
-  { name: "Node.js", icon: <FaNodeJs />, level: 65 },
-  { name: "Express", icon: <SiExpress />, level: 65 },
-  { name: "PHP", icon: <FaPhp />, level: 55 },
+  { name: "Node.js", icon: <FaNodeJs />, level: 55 },
+  { name: "Express", icon: <SiExpress />, level: 55 },
+  { name: "PHP", icon: <FaPhp />, level: 45 },
 ];
 
 const databaseSkills = [
-  { name: "MongoDB", icon: <SiMongodb />, level: 65 },
-  { name: "MySQL", icon: <SiMysql />, level: 70 },
+  { name: "MongoDB", icon: <SiMongodb />, level: 55 },
+  { name: "MySQL", icon: <SiMysql />, level: 60 },
 ];
 
 const languageSkills = [
-  { name: "JavaScript", icon: <TbBrandJavascript />, level: 75 },
-  { name: "PHP", icon: <TbFileTypePhp />, level: 70 },
-  { name: "Python", icon: <FaPython />, level: 60 },
+  { name: "JavaScript", icon: <TbBrandJavascript />, level: 65 },
+  { name: "PHP", icon: <TbFileTypePhp />, level: 60 },
+  { name: "Python", icon: <FaPython />, level: 50 },
 ];
 
 const toolSkills = [
-  { name: "Git", icon: <FaGitSquare />, level: 70 },
-  { name: "GitHub", icon: <FaGithub />, level: 70 },
-  { name: "Figma", icon: <TbBrandFigma />, level: 80 },
+  { name: "Git", icon: <FaGitSquare />, level: 60 },
+  { name: "GitHub", icon: <FaGithub />, level: 60 },
+  { name: "Figma", icon: <TbBrandFigma />, level: 70 },
 ];
 
 export default function Skills() {

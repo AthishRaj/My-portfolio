@@ -5,16 +5,32 @@ import { motion } from "motion/react";
 export default function About() {
   return (
     <>
-      <section id="about">
-        <div className=" flex justify-center text-3xl font-bold">ABOUT ME</div>
-        <div className=" w-full h-max flex flex-col items-center justify-around gap-5 py-6 sm:flex-row md:w-[80vw] mx-auto">
-          <img
-            src={pic2}
-            alt="Profile"
-            className="w-32 h-32 object-cover sm:w-48 sm:h-48 bg-sky-400 rounded-full "
-          />
+      <section id="about" className="h-dvh">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: .3 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="mt-3 text-center text-6xl font-bold text-transparent [-webkit-text-stroke:1px_white]"
+        >
+          ABOUT ME
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: .3 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className=" w-full max-w-2/3 h-max flex flex-col items-center justify-around gap-5 py-6 sm:flex-row md:w-[80vw] mx-auto"
+        >
+          <div className="border border-sky-400 rounded-full p-1 ">
+            <img
+              src={pic2}
+              alt="Profile"
+              className=" object-cover object-top md:w-70 md:h-70 sm:w-48 sm:h-48 w-32 h-32 rounded-full bg-sky-400 transition "
+            />
+          </div>
 
-          <div className=" w-2/3 ">
+          <div className=" w-2/3 flex flex-col">
             <p className="group">
               Recent Computer Science graduate with hands-on experience in
               full-stack web development through an internship and personal
@@ -24,14 +40,23 @@ export default function About() {
               <span className="bolds">PHP</span>,{" "}
               <span className="bolds">JavaScript</span>,{" "}
               <span className="bolds">MySQL</span>, and{" "}
-              <span className="bolds">MongoDB</span>, with experience
-              building responsive web applications, REST APIs, and real-time
+              <span className="bolds">MongoDB</span>, with experience building
+              responsive web applications, REST APIs, and real-time
               collaborative systems. Passionate about writing clean,
               maintainable code and developing user-focused solutions while
               continuously learning modern web technologies.
             </p>
+            <div className=" mt-5 h-0.5 w-full bg-sky-400" />
+            <div>
+              <a
+                href="#contact"
+                className="inline-block mt-3 px-2 py-1 border rounded-2xl border-sky-400 hover:bg-sky-500 transition "
+              >
+                CONTACT ME
+              </a>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );
