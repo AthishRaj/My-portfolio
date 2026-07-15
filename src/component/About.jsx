@@ -20,7 +20,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: .3 }}
           viewport={{ once: true, amount: 0.3 }}
-          className=" w-full max-w-2/3 h-max flex flex-col items-center justify-around gap-5 py-6 sm:flex-row md:w-[80vw] mx-auto"
+          className=" w-full lg:max-w-2/3 h-max flex flex-col items-center justify-around gap-5 py-6 md:flex-row md:w-[80vw] mx-auto"
         >
           <div className="border border-sky-400 rounded-full p-1 ">
             <img
@@ -30,7 +30,7 @@ export default function About() {
             />
           </div>
 
-          <div className=" w-2/3 flex flex-col">
+          <div className=" sm:w-2/3 mx-5 sm:mx-0 flex flex-col">
             <p className="group">
               Recent Computer Science graduate with hands-on experience in
               full-stack web development through an internship and personal
