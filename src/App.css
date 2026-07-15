@@ -6,11 +6,6 @@
   initial-value: 0deg;
 }
 
-@theme {
-  --color-base: #2563eb;
-}
-
-
 @keyframes rotate {
   to {
     --border-angle: 360deg;

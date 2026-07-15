@@ -14,7 +14,7 @@ export default function About() {
             className="w-32 h-32 object-cover sm:w-48 sm:h-48 bg-sky-400 rounded-full "
           />
 
-          <div className=" w-2/3 text-justify">
+          <div className=" w-2/3 ">
             <p className="group">
               Recent Computer Science graduate with hands-on experience in
               full-stack web development through an internship and personal
