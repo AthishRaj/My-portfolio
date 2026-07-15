@@ -8,8 +8,7 @@ import Contact from './component/Contact';
 import Skills from './component/Skills2';
 import Experience from './component/Experience';
 import ScrollToTop from './component/ScrollToTop';
-import Cursor from './component/Cursor';
-
+import Cursor from './component/cursor';
 export default function App() {
   return (
     <>
