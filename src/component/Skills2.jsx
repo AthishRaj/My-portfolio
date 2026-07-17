@@ -55,7 +55,7 @@ export default function Skills() {
   return (
     <>
       <div className="mt-20 flex flex-col">
-        <h1 className="self-center text-3xl font-bold">MY SKILLS</h1>
+        <h1 className="section-title">MY SKILLS</h1>
 
         <div className="w-full flex flex-col md:flex-row gap-6 justify-evenly px-6 my-6">
           {/* frontend skills */}
@@ -73,12 +73,12 @@ export default function Skills() {
                         {skill.icon}
                         {skill.name}
                       </span>
-                      <span className="text-sky-400">{skill.level}%</span>
+                      <span className="text-[var(--accent)]">{skill.level}%</span>
                     </div>
 
-                    <div className="w-full h-3 bg-gray-800 rounded-full overflow-hidden">
+                    <div className="w-full h-3 bg-gray-300 dark:bg-gray-800 rounded-full overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 transition-all duration-1000"
+                        className="h-full rounded-full bg-gradient-to-r from-[var(--accent)] to-cyan-400 transition-all duration-1000"
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
@@ -103,12 +103,12 @@ export default function Skills() {
                         {skill.icon}
                         {skill.name}
                       </span>
-                      <span className="text-sky-400">{skill.level}%</span>
+                      <span className="text-[var(--accent)]">{skill.level}%</span>
                     </div>
 
-                    <div className="w-full h-3 bg-gray-800 rounded-full overflow-hidden">
+                    <div className="w-full h-3 bg-gray-300 dark:bg-gray-800 rounded-full overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 transition-all duration-1000"
+                        className="h-full rounded-full bg-gradient-to-r from-[var(--accent)] to-cyan-400 transition-all duration-1000"
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
@@ -128,12 +128,12 @@ export default function Skills() {
                         {skill.icon}
                         {skill.name}
                       </span>
-                      <span className="text-sky-400">{skill.level}%</span>
+                      <span className="text-[var(--accent)]">{skill.level}%</span>
                     </div>
 
-                    <div className="w-full h-3 bg-gray-800 rounded-full overflow-hidden">
+                    <div className="w-full h-3 bg-gray-300 dark:bg-gray-800 rounded-full overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 transition-all duration-1000"
+                        className="h-full rounded-full bg-gradient-to-r from-[var(--accent)] to-cyan-400 transition-all duration-1000"
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
@@ -158,12 +158,12 @@ export default function Skills() {
                         {skill.icon}
                         {skill.name}
                       </span>
-                      <span className="text-sky-400">{skill.level}%</span>
+                      <span className="text-[var(--accent)]">{skill.level}%</span>
                     </div>
 
-                    <div className="w-full h-3 bg-gray-800 rounded-full overflow-hidden">
+                    <div className="w-full h-3 bg-gray-300 dark:bg-gray-800 rounded-full overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 transition-all duration-1000"
+                        className="h-full rounded-full bg-gradient-to-r from-[var(--accent)] to-cyan-400 transition-all duration-1000"
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
@@ -183,12 +183,12 @@ export default function Skills() {
                         {skill.icon}
                         {skill.name}
                       </span>
-                      <span className="text-sky-400">{skill.level}%</span>
+                      <span className="text-[var(--accent)]">{skill.level}%</span>
                     </div>
 
-                    <div className="w-full h-3 bg-gray-800 rounded-full overflow-hidden">
+                    <div className="w-full h-3 bg-gray-300 dark:bg-gray-800 dark:bg-gray-800 rounded-full overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 transition-all duration-1000"
+                        className="h-full rounded-full bg-gradient-to-r from-[var(--accent)] to-cyan-400 transition-all duration-1000"
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>

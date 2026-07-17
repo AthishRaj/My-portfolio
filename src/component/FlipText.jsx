@@ -44,7 +44,7 @@ export default function FlipText() {
             ease: "easeInOut",
           }}
           style={{ transformPerspective: 1000 }}
-          className="text-4xl font-bold text-sky-400"
+          className="text-2xl sm:text-4xl font-bold text-[var(--accent)]"
         >
           {words[index]}
         </motion.h2>

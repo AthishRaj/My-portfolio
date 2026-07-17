@@ -27,7 +27,7 @@ export default function Nav() {
             onMouseLeave={() => {
               setPosition((pv) => ({ ...pv, opacity: 0 }));
             }}
-            className="hidden border-2 border-sky-400 bg-gray-950 relative sm:flex items-center rounded-full h-10 md:h-14 p-1"
+            className="hidden border-2 border-[var(--accent)] bg-[var(--bg-dark)] relative sm:flex items-center rounded-full h-10 md:h-14 p-1"
           >
             {navLinks.map((link) => (
               <li
@@ -41,14 +41,14 @@ export default function Nav() {
                     left: e.currentTarget.offsetLeft,
                   });
                 }}
-                className="z-10 relative block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-3 md:text-base "
+                className="z-10 relative block cursor-pointer px-3 py-1.5 text-xs uppercase md:px-5 md:py-3 md:text-base text-[var(--accent)] hover:text-white transition"
               >
                 <a href={link.href}>{link.name}</a>
               </li>
             ))}
             <motion.li
               animate={position}
-              className="z-0 absolute h-7 md:h-11 rounded-full left-0 bg-sky-500 w-20"
+              className="z-0 absolute h-7 md:h-11 rounded-full left-0 bg-[var(--accent)] w-20"
             />
           </ul>
           {/* Mobile Button */}
@@ -65,13 +65,13 @@ export default function Nav() {
             onClick={() => setIsOpen(false)}
           />
 
-          <div className="fixed top-14 right-0 w-1/2 bg-gray-900 z-50 flex flex-col">
+          <div className="fixed top-14 right-0 w-1/2 bg-[var(--bg-light)] z-50 flex flex-col">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="border-b border-gray-800 px-4 py-3 hover:bg-gray-800"
+                className="border-b border-gray-800 px-4 py-3 hover:bg-[var(--bg-dark)]"
               >
                 {link.name}
               </a>

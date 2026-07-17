@@ -7,7 +7,7 @@ export default function Experience() {
       <section id="experience">
         <div className="mt-20 w-full flex flex-col items-center gap-4 my-6">
           <div>
-            <h1 className="text-3xl font-bold">EXPERIENCE</h1>
+            <h1 className="section-title">EXPERIENCE</h1>
           </div>
           <div className="w-full flex flex-col md:flex-row gap-6 justify-evenly px-6 my-6">
             <div className="card-blu">
@@ -35,20 +35,25 @@ export default function Experience() {
                     application performance.
                   </li>
                 </ul>
-                <div className="flex gap-3">
+                <div className="flex gap-3 flex-wrap">
                   <a
                     className="card-link"
                     href="https://www.smartwebin.com/"
                     target="none"
                   >
-                   <GrOrganization /> Company
+                    <span className="flex items-center gap-2 justify-evenly " >
+                      <GrOrganization /> Company
+                    </span>
                   </a>
                   <a
                     className="card-link"
                     href="https://drive.google.com/file/d/1IHLav0v4jBFHvIQvxKSVQrwD7qseDO5x/view"
                     target="none"
                   >
-                    <PiCertificateFill />Certificate
+                    <span className="flex items-center gap-2 justify-evenly " >
+                      <PiCertificateFill />
+                      Certificate
+                    </span>
                   </a>
                 </div>
               </div>

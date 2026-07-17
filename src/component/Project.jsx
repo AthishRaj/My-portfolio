@@ -6,7 +6,7 @@ export default function Project() {
       <section id="project">
         <div className="mt-20 w-full flex flex-col items-center gap-4 my-6">
           <div>
-            <h1 className="text-3xl font-bold">PROJECTS</h1>
+            <h1 className="section-title">PROJECTS</h1>
           </div>
           <div className="w-full flex flex-col md:flex-row gap-6 justify-evenly px-6 my-6">
             <div className="card-blu">
@@ -41,7 +41,9 @@ export default function Project() {
                     href="https://github.com/AthishRaj/codoco"
                     target="none"
                   >
-                    <FaGithub /> Github
+                    <span className="flex items-center justify-evenly gap-2 " >
+                      <FaGithub /> Github
+                    </span>
                   </a>
                 </div>
               </div>

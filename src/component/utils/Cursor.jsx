@@ -17,8 +17,8 @@ export default function Cursor() {
 
   useEffect(() => {
     const move = (e) => {
-      mouseX.set(e.clientX - 120);
-      mouseY.set(e.clientY - 120);
+      mouseX.set(e.clientX - 10);
+      mouseY.set(e.clientY - 10);
     };
 
     window.addEventListener("mousemove", move);
@@ -29,8 +29,8 @@ export default function Cursor() {
   return (
     <motion.div
       style={{ x, y }}
-      className="fixed top-0 left-0 w-60 h-60 rounded-full pointer-events-none z-[9999]
-      bg-radial from-sky-400/20 to-transparent blur-xl"
+      className="fixed top-0 left-0 w-5 h-5 rounded-full pointer-events-none z-[9999]
+      bg-radial from-[var(--accent)]/20 to-transparent"
     />
   );
 }

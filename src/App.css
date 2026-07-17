@@ -6,6 +6,26 @@
   initial-value: 0deg;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* --bg-dark: #d4d4d4;
+  --bg-light: #e5e5e5;
+  --accent: #000000;
+  --text: #000000; */
+  --bg-dark: hsl(0, 0%, 90%);
+  --bg-light: hsl(0, 0%, 95%);
+  --accent: hsl(196, 90%, 25%);
+  --text: #0f172a;
+}
+
+.dark {
+  --bg-dark: #030712;
+  --bg-light: #101828;
+  --accent: #00bbff;
+  --text: #ffffff;
+}
+
 @keyframes rotate {
   to {
     --border-angle: 360deg;
@@ -17,15 +37,20 @@ html {
 }
 
 @layer components {
-  .nav-link {
-    @apply flex px-2 sm:px-3 lg:px-5 items-center h-full hover:bg-sky-600 transition duration-300 ease-in-out lg:text-lg;
+  body {
+    @apply transition-colors duration-300;
   }
 
   .footer-link {
-    @apply hover:text-sky-400 hover:text-shadow-[0_0_12px_#2563eb] transition duration-200 ease-linear
+    @apply flex items-center border p-2 rounded-full overflow-hidden transition-all duration-300;
   }
+
+  .footer-link span {
+    @apply sm:max-w-0 ml-1  sm:ml-0 sm:opacity-0 group-hover:opacity-100 group-hover:max-w-xs group-hover:ml-2 whitespace-nowrap transition-all duration-300;
+  }
+
   .nav-items li {
-    @apply h-full
+    @apply h-full;
   }
   .card-blu {
     @apply p-[2px] rounded-3xl flex-1
@@ -37,31 +62,45 @@ html {
   .card-blu:hover {
     background-image: conic-gradient(
       from var(--border-angle),
-      var(--color-gray-900) 40%,
-      var(--color-sky-400) 50%,
-      var(--color-gray-900) 70%
+      var(--bg-light) 40%,
+      var(--accent) 50%,
+      var(--bg-light) 70%
     );
   }
 
-  .card-inner {
-    @apply bg-radial from-gray-900 from-50% to-90% to-gray-950  p-10 rounded-3xl h-full border border-gray-800;
+  .section-title {
+    @apply mt-3 text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold;
   }
 
-  .pills {
-    @apply transform bg-gray-800 rounded-full px-6 py-3 border border-transparent  hover:shadow-[0_2px_0_var(--color-base)] hover:scale-110 hover:-translate-y-1 transition duration-200 ease-linear cursor-default;
+  .card-inner {
+    @apply bg-radial from-[var(--bg-light)] from-50% to-90%  to-[var(--bg-dark)] p-10 rounded-3xl h-full border dark:border-gray-800 border-gray-500;
   }
 
   .card-link {
-    @apply border flex items-center gap-2 border-sky-600 px-4 py-2 rounded-3xl transition duration-200 ease-linear
+    @apply relative overflow-hidden inline-block border border-[var(--accent)] text-[var(--accent)] px-4 py-2 rounded-3xl transition duration-300;
+  }
+
+  .card-link::before {
+    content: "";
+    @apply absolute left-0 top-0 h-full w-0 bg-[var(--accent)];
+    transition: width 0.5s ease;
+    z-index: 0;
   }
 
   .card-link:hover {
-    @apply bg-sky-600
+    @apply text-white transform scale-105;
   }
 
-  .bolds{
-    @apply font-bold group-hover:text-sky-500 transition
+  .card-link:hover::before {
+    width: 100%;
   }
-  
+
+  .card-link span,
+  .card-link svg {
+    @apply relative z-10;
+  }
+
+  .bolds {
+    @apply font-bold group-hover:text-[var(--accent)] transition;
+  }
 }
-

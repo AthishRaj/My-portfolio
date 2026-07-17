@@ -29,20 +29,20 @@ export default function Welcome() {
           onMouseLeave={mouseLeaveHandle}
           onMouseEnter={mouseEnterHandle}
           onMouseMove={mouseMoveHandle}
-          className=" h-[60dvh] md:h-[95dvh] w-dvw flex flex-col gap-4 sm:gap-8 justify-center items-center hover:[transform:rotatex(var(--x-rotate))_rotatey(var(--y-rotate))] transition duration-200 ease-linear "
+          className="h-[95dvh] w-dvw flex flex-col gap-4 sm:gap-8 justify-center items-center hover:[transform:rotatex(var(--x-rotate))_rotatey(var(--y-rotate))] transition duration-200 ease-linear "
         >
           <h1 className="text-2xl sm:text-4xl">I am </h1>
           <div className="">
             <h1 className="">
-              <span className="text-5xl font-bold sm:text-7xl lg:text-9xl">
-                <span className="text-sky-400">A</span>
+              <span className="text-4xl font-bold sm:text-7xl lg:text-9xl">
+                <span className="text-[var(--accent)]">A</span>
                 thish
-                <span className="text-sky-400">R</span>
+                <span className="text-[var(--accent)]">R</span>
                 aj U K
               </span>
             </h1>
           </div>
-          <h1 className="text-2xl sm:text-4xl">
+          <h1 className="">
             <FlipText />
           </h1>
         </div>

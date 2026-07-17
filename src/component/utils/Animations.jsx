@@ -5,7 +5,6 @@ export const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5 },
   },
 };
 
@@ -14,13 +13,12 @@ export const fadeRight = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.5 },
   },
 };
 
 export const widthGrow = {
   hidden: { scaleX: 0 },
-  visible: { scaleX: 1, transition: { duration: 0.5 } },
+  visible: { scaleX: 1 },
 };
 
 export function MotionDiv({ variants, children, className, ...props }) {
