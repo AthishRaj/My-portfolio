@@ -10,7 +10,7 @@ export default function Contact() {
           <div className="justify-items-center">
             <h1 className="section-title">CONTACT ME</h1>
             <p className="my-6 mx-6 text-center">
-              'm currently open to internships, full-time opportunities,
+              I'm currently open to internships, full-time opportunities,
               freelance projects, and collaborations. If you'd like to work
               together or simply say hello, feel free to reach out.
             </p>

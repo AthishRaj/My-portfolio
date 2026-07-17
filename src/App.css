@@ -42,11 +42,11 @@ html {
   }
 
   .footer-link {
-    @apply flex items-center border p-2 rounded-full overflow-hidden transition-all duration-300;
+    @apply flex items-center border p-2 rounded-full overflow-hidden transition-all ease-in-out duration-500;
   }
 
   .footer-link span {
-    @apply sm:max-w-0 ml-1  sm:ml-0 sm:opacity-0 group-hover:opacity-100 group-hover:max-w-xs group-hover:ml-2 whitespace-nowrap transition-all duration-300;
+    @apply sm:w-0 ml-1  sm:ml-0 sm:opacity-0 group-hover:opacity-100 group-hover:w-xs group-hover:ml-2 transition-all ease-in-out duration-500;
   }
 
   .nav-items li {
