@@ -1,7 +1,23 @@
-import { FaBootstrap, FaCss3Alt, FaGithub, FaGitSquare, FaHtml5, FaNodeJs, FaPhp, FaPython, FaReact } from "react-icons/fa";
+import {
+  FaBootstrap,
+  FaCss3Alt,
+  FaGithub,
+  FaGitSquare,
+  FaHtml5,
+  FaNodeJs,
+  FaPhp,
+  FaPython,
+  FaReact,
+} from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
-import { TbBrandFigma, TbBrandJavascript, TbBrandNextjs, TbFileTypePhp } from "react-icons/tb";
+import {
+  TbBrandFigma,
+  TbBrandJavascript,
+  TbBrandNextjs,
+  TbFileTypePhp,
+} from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const frontendSkills = [
   { name: "HTML", icon: <FaHtml5 />, level: 75 },
